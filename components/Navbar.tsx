@@ -33,26 +33,26 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 w-full border-b border-solid border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-background-dark/95 backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 flex items-center justify-between whitespace-nowrap py-3">
         {/* Logo Section */}
-        <div className="flex items-center gap-3 cursor-pointer select-none" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
-           <img 
-             src="/logo.jpeg" 
-             alt="Ball Is Life Academy" 
-             className="h-12 w-auto object-contain"
-             onError={(e) => {
-               // Fallback if image fails
-               e.currentTarget.style.display = 'none';
-               e.currentTarget.nextElementSibling?.classList.remove('hidden');
-             }}
-           />
-           {/* Fallback Text Logo */}
-           <div className="hidden flex-col leading-none">
-             <h2 className="text-2xl font-black tracking-tighter text-secondary dark:text-white leading-[0.85]">
+        <div className="flex items-center gap-3 cursor-pointer select-none" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          <img
+            src="./public/logo.jpeg"
+            alt="Ball Is Life Academy"
+            className="h-16 w-auto object-contain"
+            onError={(e) => {
+              // Fallback if image fails
+              e.currentTarget.style.display = 'none';
+              e.currentTarget.nextElementSibling?.classList.remove('hidden');
+            }}
+          />
+          {/* Fallback Text Logo */}
+          <div className="hidden flex-col leading-none">
+            <h2 className="text-2xl font-black tracking-tighter text-secondary dark:text-white leading-[0.85]">
               BILA
-             </h2>
-             <span className="text-[10px] font-bold tracking-[0.15em] text-primary">
-               BALL IS LIFE ACADEMY
-             </span>
-           </div>
+            </h2>
+            <span className="text-[10px] font-bold tracking-[0.15em] text-primary">
+              BALL IS LIFE ACADEMY
+            </span>
+          </div>
         </div>
 
         {/* Desktop Navigation */}
