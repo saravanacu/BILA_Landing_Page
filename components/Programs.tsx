@@ -7,7 +7,7 @@ const Programs = () => {
       description:
         "Classes are held twice a day, six days a week. Since 2020, we have coached over 100 kids in and around our village.",
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuBAiRPm-aJvVKKIq4oDQYNPYwdVLUIrhKhecw21NN-T4JFneNtcsnCkyxyyXYdKww_2EMXjeVRLC9dHgPFAr94Ry-WQ3pJzehU7tu8-xnE5CcR84BrSiCGjJt9fGouFWn6x9h-9O4LPJNlt_Uy0wlS_Ye5yyLnpZr-sdU3Y4ijOC-u2xkRquaPoEhBd3XxZFofkaUI3lxhC8MeE-QQzsZ2yTmQnQHkM3Zgtm__BgYfe8kTIlhAe3FtbKzaT2hFHsaS2VNAjMfgsV5uf",
+        "./public/hello-1.jpeg",
       alt: "Kids training",
     },
     {
@@ -15,7 +15,7 @@ const Programs = () => {
       description:
         "We conduct summer camps and participate in district & state level tournaments to create opportunities for young players.",
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuD0DOEmO-p8eIEvNCQJwE5FLLknvoYyFsVS_q-vCvVj9WZW5FkXzHH2waBnzIH4ItHkWJLtMQHsLZ_VFe49NID9_cu-uHIgN3G7PB0R3c8UpvPgkoZdJ-Gru2NO97ec7b-sxGGkgQR-tjQc8PVRydxNmJhw0xAlLj5F5EE3m83AFFweMTMcgE1egk2FTENZthEzdTuoSluJ4OpdVsvT0YVm1Gd1oDEdkPx1r-P9QUJHMuxJasJnDB-V8tRwRb3bAdSodOq3eVK3CiAS",
+        "./public/hello-2.jpeg",
       alt: "Tournament play",
     },
     {
@@ -23,7 +23,7 @@ const Programs = () => {
       description:
         "Training is free for children aged 6-16 from all backgrounds. We provide sports accessories and equipment for kids in need.",
       image:
-        "https://lh3.googleusercontent.com/aida-public/AB6AXuAkfc5PqcbMM9XKmeKME8hxbZRfBgjXb4gOvxbZSq5gOc3kPV3U_EnnkhgZWhLW6g-rpqrjL9VvcmUZwIFQGz4ZTH6Ukh-0sOf2zBOCMwgDABkRTN1WKWXHX34Gi8LNba51Mao4e-gjdQaCE8ICxiOYowfnQMOaR4iTeBRTJ18rO7tZC2RJjXzP7uT6cmUEh9o1HTEAN0zTLHQrlHd8kQsWsO8r9Z_4FI-SUg6bYyY8wLeFIk1kqXjROdmUn89kRB7RQyhO2lS_Lf6w",
+        "./public/hello-3.jpeg",
       alt: "Community support",
     },
   ];

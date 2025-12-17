@@ -1,57 +1,74 @@
 import React from "react";
 
 const Footer = () => {
+  const navLinks = [
+    { name: "Our Vision", href: "#vision" },
+    { name: "What We Do", href: "#programs" },
+    { name: "Our Impact", href: "#achievements" },
+    { name: "Our Leadership", href: "#management" },
+    { name: "Contact Us", href: "#contact" },
+  ];
+
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.replace("#", "");
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <footer className="w-full border-t border-slate-200 dark:border-slate-800 py-12 bg-white dark:bg-background-dark">
       <div className="max-w-7xl px-4 mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex items-center gap-3 select-none">
-           <img 
-             src="/logo.jpeg" 
-             alt="Ball Is Life Academy" 
-             className="h-10 w-auto object-contain"
-             onError={(e) => {
-               e.currentTarget.style.display = 'none';
-               e.currentTarget.nextElementSibling?.classList.remove('hidden');
-             }}
-           />
-           <div className="hidden flex-col leading-none">
-             <h2 className="text-xl font-black tracking-tighter text-secondary dark:text-white leading-[0.85]">
+          <img
+            src="/logo.jpeg"
+            alt="Ball Is Life Academy"
+            className="h-12 w-auto object-contain"
+            onError={(e) => {
+              e.currentTarget.style.display = 'none';
+              e.currentTarget.nextElementSibling?.classList.remove('hidden');
+            }}
+          />
+          <div className="hidden flex-col leading-none">
+            <h2 className="text-xl font-black tracking-tighter text-secondary dark:text-white leading-[0.85]">
               BILA
-             </h2>
-             <span className="text-[8px] font-bold tracking-[0.15em] text-primary">
-               BALL IS LIFE ACADEMY
-             </span>
-           </div>
+            </h2>
+            <span className="text-[8px] font-bold tracking-[0.15em] text-primary">
+              BALL IS LIFE ACADEMY
+            </span>
+          </div>
         </div>
-        
-        <div className="flex gap-8 text-slate-600 dark:text-gray-400 text-sm font-medium">
-          <a className="hover:text-primary transition-colors" href="#">
-            Privacy Policy
-          </a>
-          <a className="hover:text-primary transition-colors" href="#">
-            Terms of Service
-          </a>
+
+        <div className="flex flex-col items-center gap-6">
+          <div className="flex flex-wrap justify-center gap-6 lg:gap-8">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-sm font-bold uppercase tracking-wide text-slate-700 dark:text-slate-300 hover:text-primary transition-colors"
+                onClick={(e) => handleScroll(e, link.href)}
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
+          <div className="flex gap-8 text-slate-600 dark:text-gray-400 text-sm font-medium">
+            <a className="hover:text-primary transition-colors" href="#">
+              Privacy Policy
+            </a>
+            <a className="hover:text-primary transition-colors" href="#">
+              Terms of Service
+            </a>
+          </div>
         </div>
-        
+
         <div className="flex gap-4">
           <a
             className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-secondary dark:text-white hover:bg-primary hover:text-white transition-all duration-300"
-            href="#"
-            aria-label="Facebook"
-          >
-            <svg
-              fill="currentColor"
-              height="20"
-              viewBox="0 0 24 24"
-              width="20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-            </svg>
-          </a>
-          <a
-            className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-secondary dark:text-white hover:bg-primary hover:text-white transition-all duration-300"
-            href="#"
+            href="https://www.instagram.com/ballislifeacademy?igsh=MTFlNnAxM3E5YXlwMg%3D%3D&utm_source=qr"
+            target="_blank"
             aria-label="Instagram"
           >
             <svg
@@ -67,7 +84,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-center text-slate-400 text-xs mt-8">
-        © 2024 Ball Is Life Academy. All rights reserved.
+        © 2025 Ball Is Life Academy. All rights reserved.
       </p>
     </footer>
   );

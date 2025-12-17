@@ -6,28 +6,28 @@ const Hero = () => {
   const slides = [
     {
       id: 1,
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7OH87ZkTwW2fb1V-xhXjIKTr68jmmA9ddoAaDyn5Ifp_HF3gig3N9XvHUAwXhjxpPKPm8UFazZ-b-ydBniRInPGvuf7vcvXUEwhv8oYObb11hlpj-KfAdtM_AlEB3jjx0MNUSXqxI5nSLh49ux9yXCihR06A3wu0H53dnZlA65pFCYd88lkhLVc9uD_mp8FDEUaiLR3sJIxrDvmJV9jfe89eFaZJu3yCNphflgYVDWyhX96U30xdC72qh5v8exPBsfpgz3WPpZqRb",
+      image: "./public/hero-1.jpeg",
       title: "Ball Is Life Academy",
       subtitle: "Free Basketball Coaching Center",
       description: "Sholavandan, Madurai, TN, IN.",
     },
     {
       id: 2,
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBAiRPm-aJvVKKIq4oDQYNPYwdVLUIrhKhecw21NN-T4JFneNtcsnCkyxyyXYdKww_2EMXjeVRLC9dHgPFAr94Ry-WQ3pJzehU7tu8-xnE5CcR84BrSiCGjJt9fGouFWn6x9h-9O4LPJNlt_Uy0wlS_Ye5yyLnpZr-sdU3Y4ijOC-u2xkRquaPoEhBd3XxZFofkaUI3lxhC8MeE-QQzsZ2yTmQnQHkM3Zgtm__BgYfe8kTIlhAe3FtbKzaT2hFHsaS2VNAjMfgsV5uf",
+      image: "./public/hero-2.jpeg",
       title: "More Than Just A Game",
       subtitle: "Building Character Through Sport",
       description: "Teaching discipline, teamwork, and leadership to the next generation of athletes.",
     },
     {
       id: 3,
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuD0DOEmO-p8eIEvNCQJwE5FLLknvoYyFsVS_q-vCvVj9WZW5FkXzHH2waBnzIH4ItHkWJLtMQHsLZ_VFe49NID9_cu-uHIgN3G7PB0R3c8UpvPgkoZdJ-Gru2NO97ec7b-sxGGkgQR-tjQc8PVRydxNmJhw0xAlLj5F5EE3m83AFFweMTMcgE1egk2FTENZthEzdTuoSluJ4OpdVsvT0YVm1Gd1oDEdkPx1r-P9QUJHMuxJasJnDB-V8tRwRb3bAdSodOq3eVK3CiAS",
+      image: "./public/hero-3.jpeg",
       title: "Competitive Excellence",
       subtitle: "District & State Level Tournaments",
       description: "Providing opportunities for young talent to showcase their skills on bigger stages.",
     },
     {
       id: 4,
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAkfc5PqcbMM9XKmeKME8hxbZRfBgjXb4gOvxbZSq5gOc3kPV3U_EnnkhgZWhLW6g-rpqrjL9VvcmUZwIFQGz4ZTH6Ukh-0sOf2zBOCMwgDABkRTN1WKWXHX34Gi8LNba51Mao4e-gjdQaCE8ICxiOYowfnQMOaR4iTeBRTJ18rO7tZC2RJjXzP7uT6cmUEh9o1HTEAN0zTLHQrlHd8kQsWsO8r9Z_4FI-SUg6bYyY8wLeFIk1kqXjROdmUn89kRB7RQyhO2lS_Lf6w",
+      image: "./public/hero-4.jpeg",
       title: "Community First",
       subtitle: "Empowering Rural Youth",
       description: "Creating a safe, supportive environment for children from all backgrounds since 2020.",
@@ -47,9 +47,8 @@ const Hero = () => {
       {slides.map((slide, index) => (
         <div
           key={slide.id}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
-          }`}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${index === currentSlide ? "opacity-100 z-10" : "opacity-0 z-0"
+            }`}
         >
           <div
             className="absolute inset-0 bg-cover bg-center transition-transform duration-[5000ms] ease-linear transform scale-105 hover:scale-100"
@@ -64,11 +63,10 @@ const Hero = () => {
         {slides.map((slide, index) => (
           <div
             key={slide.id}
-            className={`absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center px-4 transition-all duration-700 transform ${
-              index === currentSlide
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-8 pointer-events-none"
-            }`}
+            className={`absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center px-4 transition-all duration-700 transform ${index === currentSlide
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-8 pointer-events-none"
+              }`}
           >
             <div className="max-w-4xl flex flex-col items-center gap-4 md:gap-6">
               <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight drop-shadow-lg">
@@ -93,9 +91,8 @@ const Hero = () => {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`h-2 rounded-full transition-all duration-300 ${
-              index === currentSlide ? "w-8 bg-primary" : "w-2 bg-white/50 hover:bg-white"
-            }`}
+            className={`h-2 rounded-full transition-all duration-300 ${index === currentSlide ? "w-8 bg-primary" : "w-2 bg-white/50 hover:bg-white"
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
