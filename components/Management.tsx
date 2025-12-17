@@ -2,9 +2,9 @@ import React from "react";
 
 const Management = () => {
   return (
-    <section className="w-full bg-white dark:bg-background-dark py-16 scroll-mt-20" id="management">
+    <section className="w-full bg-white dark:bg-background-dark py-20 md:py-32 min-h-screen scroll-mt-20" id="management">
       <div className="max-w-7xl mx-auto px-4 flex flex-col gap-10 items-center">
-        <h2 className="text-secondary dark:text-white text-3xl md:text-4xl font-bold text-center">
+        <h2 className="text-secondary dark:text-white tracking-tight text-3xl md:text-5xl font-black text-center">
           Our Leadership
         </h2>
 

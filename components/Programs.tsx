@@ -29,10 +29,10 @@ const Programs = () => {
   ];
 
   return (
-    <section className="w-full bg-slate-50 dark:bg-slate-900/50 py-16 scroll-mt-20" id="programs">
+    <section className="w-full bg-slate-50 dark:bg-slate-900/50 py-20 md:py-32 min-h-screen scroll-mt-20" id="programs">
       <div className="max-w-7xl mx-auto px-4 flex flex-col gap-8">
         <div className="flex items-center justify-center">
-          <h2 className="text-secondary dark:text-white text-3xl font-bold">
+          <h2 className="text-secondary dark:text-white tracking-tight text-3xl md:text-5xl font-black">
             What We Do
           </h2>
         </div>

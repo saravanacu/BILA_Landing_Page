@@ -45,7 +45,7 @@ const Vision = () => {
   ];
 
   return (
-    <section className="w-full bg-white dark:bg-background-dark py-16 scroll-mt-20" id="vision">
+    <section className="w-full bg-white dark:bg-background-dark py-20 md:py-32 min-h-screen scroll-mt-20" id="vision">
       <div className="max-w-7xl mx-auto px-4 flex flex-col gap-12">
         <div className="flex flex-col gap-4 items-center text-center">
           <h1 className="text-secondary dark:text-white tracking-tight text-3xl md:text-5xl font-black leading-tight max-w-4xl">

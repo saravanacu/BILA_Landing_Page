@@ -5,6 +5,7 @@ import Vision from "./components/Vision";
 import Programs from "./components/Programs";
 import Impact from "./components/Impact";
 import Management from "./components/Management";
+import Partners from "./components/Partners";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -19,6 +20,7 @@ export default function App() {
         <Programs />
         <Impact />
         <Management />
+        <Partners />
         <Contact />
       </main>
       <Footer />

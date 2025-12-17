@@ -26,6 +26,7 @@ const Navbar = () => {
     { name: "What We Do", href: "#programs" },
     { name: "Our Impact", href: "#achievements" },
     { name: "Our Leadership", href: "#management" },
+    { name: "Our Partners", href: "#partners" },
     { name: "Contact Us", href: "#contact" },
   ];
 

@@ -8,11 +8,11 @@ const Impact = () => {
   ];
 
   return (
-    <section className="w-full bg-secondary dark:bg-slate-900 py-16 scroll-mt-20" id="achievements">
+    <section className="w-full bg-secondary dark:bg-slate-900 py-20 md:py-32 min-h-screen scroll-mt-20" id="achievements">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-10 items-center justify-between">
           <div className="flex flex-col gap-3 max-w-xl text-center md:text-left">
-            <h2 className="text-white text-3xl md:text-4xl font-bold">Our Impact</h2>
+            <h2 className="text-white tracking-tight text-3xl md:text-5xl font-black">Our Impact</h2>
             <p className="text-sky-200 text-lg font-medium">
               Empowering village youth through free access to sports and mentorship.
             </p>
