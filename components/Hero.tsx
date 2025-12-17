@@ -6,28 +6,28 @@ const Hero = () => {
   const slides = [
     {
       id: 1,
-      image: "./public/hero-1.jpeg",
+      image: "/hero-1.jpeg",
       title: "Ball Is Life Academy",
       subtitle: "Free Basketball Coaching Center",
       description: "Sholavandan, Madurai, TN, IN.",
     },
     {
       id: 2,
-      image: "./public/hero-2.jpeg",
+      image: "/hero-2.jpeg",
       title: "More Than Just A Game",
       subtitle: "Building Character Through Sport",
       description: "Teaching discipline, teamwork, and leadership to the next generation of athletes.",
     },
     {
       id: 3,
-      image: "./public/hero-3.jpeg",
+      image: "/hero-3.jpeg",
       title: "Competitive Excellence",
       subtitle: "District & State Level Tournaments",
       description: "Providing opportunities for young talent to showcase their skills on bigger stages.",
     },
     {
       id: 4,
-      image: "./public/hero-4.jpeg",
+      image: "/hero-4.jpeg",
       title: "Community First",
       subtitle: "Empowering Rural Youth",
       description: "Creating a safe, supportive environment for children from all backgrounds since 2020.",

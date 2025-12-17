@@ -7,7 +7,7 @@ const Programs = () => {
       description:
         "Classes are held twice a day, six days a week. Since 2020, we have coached over 100 kids in and around our village.",
       image:
-        "./public/hello-1.jpeg",
+        "/hello-1.jpeg",
       alt: "Kids training",
     },
     {
@@ -15,7 +15,7 @@ const Programs = () => {
       description:
         "We conduct summer camps and participate in district & state level tournaments to create opportunities for young players.",
       image:
-        "./public/hello-2.jpeg",
+        "/hello-2.jpeg",
       alt: "Tournament play",
     },
     {
@@ -23,7 +23,7 @@ const Programs = () => {
       description:
         "Training is free for children aged 6-16 from all backgrounds. We provide sports accessories and equipment for kids in need.",
       image:
-        "./public/hello-3.jpeg",
+        "/hello-3.jpeg",
       alt: "Community support",
     },
   ];
