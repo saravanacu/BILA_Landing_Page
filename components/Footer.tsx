@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-center text-slate-400 text-xs mt-8">
-        © 2024 Ball Is Life Academy. All rights reserved.
+        © 2025 Ball Is Life Academy. All rights reserved.
       </p>
     </footer>
   );
