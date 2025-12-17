@@ -6,9 +6,9 @@ const Footer = () => {
       <div className="max-w-7xl px-4 mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex items-center gap-3 select-none">
            <img 
-             src="./logo.png" 
+             src="/logo.jpeg" 
              alt="Ball Is Life Academy" 
-             className="h-8 w-auto object-contain"
+             className="h-10 w-auto object-contain"
              onError={(e) => {
                e.currentTarget.style.display = 'none';
                e.currentTarget.nextElementSibling?.classList.remove('hidden');

@@ -22,11 +22,11 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { name: "Vision", href: "#vision" },
-    { name: "Programs", href: "#programs" },
-    { name: "Achievements", href: "#achievements" },
-    { name: "Leadership", href: "#management" },
-    { name: "Contact", href: "#contact" },
+    { name: "Our Vision", href: "#vision" },
+    { name: "What We Do", href: "#programs" },
+    { name: "Our Impact", href: "#achievements" },
+    { name: "Our Leadership", href: "#management" },
+    { name: "Contact Us", href: "#contact" },
   ];
 
   return (
@@ -35,9 +35,9 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className="flex items-center gap-3 cursor-pointer select-none" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
            <img 
-             src="./logo.png" 
+             src="/logo.jpeg" 
              alt="Ball Is Life Academy" 
-             className="h-10 w-auto object-contain"
+             className="h-12 w-auto object-contain"
              onError={(e) => {
                // Fallback if image fails
                e.currentTarget.style.display = 'none';
@@ -56,8 +56,8 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex flex-1 justify-end gap-8">
-          <div className="flex items-center gap-6">
+        <div className="hidden md:flex flex-1 justify-end gap-6 lg:gap-8">
+          <div className="flex items-center gap-4 lg:gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.name}
