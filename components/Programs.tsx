@@ -7,7 +7,7 @@ const Programs = () => {
       description:
         "Classes are held twice a day, six days a week. Since 2020, we have coached over 100 kids in and around our village.",
       image:
-        "./public/hello-1.jpeg",
+        "/hello-1.jpeg",
       alt: "Kids training",
     },
     {
@@ -15,7 +15,7 @@ const Programs = () => {
       description:
         "We conduct summer camps and participate in district & state level tournaments to create opportunities for young players.",
       image:
-        "./public/hello-2.jpeg",
+        "/hello-2.jpeg",
       alt: "Tournament play",
     },
     {
@@ -23,16 +23,16 @@ const Programs = () => {
       description:
         "Training is free for children aged 6-16 from all backgrounds. We provide sports accessories and equipment for kids in need.",
       image:
-        "./public/hello-3.jpeg",
+        "/hello-3.jpeg",
       alt: "Community support",
     },
   ];
 
   return (
-    <section className="w-full bg-slate-50 dark:bg-slate-900/50 py-16 scroll-mt-20" id="programs">
+    <section className="w-full bg-slate-50 dark:bg-slate-900/50 py-20 md:py-32 min-h-screen scroll-mt-20" id="programs">
       <div className="max-w-7xl mx-auto px-4 flex flex-col gap-8">
         <div className="flex items-center justify-center">
-          <h2 className="text-secondary dark:text-white text-3xl font-bold">
+          <h2 className="text-secondary dark:text-white tracking-tight text-3xl md:text-5xl font-black">
             What We Do
           </h2>
         </div>

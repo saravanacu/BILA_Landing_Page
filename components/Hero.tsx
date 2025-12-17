@@ -6,28 +6,28 @@ const Hero = () => {
   const slides = [
     {
       id: 1,
-      image: "./public/hero-1.jpeg",
+      image: "/hero-1.jpeg",
       title: "Ball Is Life Academy",
       subtitle: "Free Basketball Coaching Center",
       description: "Sholavandan, Madurai, TN, IN.",
     },
     {
       id: 2,
-      image: "./public/hero-2.jpeg",
+      image: "/hero-2.jpeg",
       title: "More Than Just A Game",
       subtitle: "Building Character Through Sport",
       description: "Teaching discipline, teamwork, and leadership to the next generation of athletes.",
     },
     {
       id: 3,
-      image: "./public/hero-3.jpeg",
+      image: "/hero-3.jpeg",
       title: "Competitive Excellence",
       subtitle: "District & State Level Tournaments",
       description: "Providing opportunities for young talent to showcase their skills on bigger stages.",
     },
     {
       id: 4,
-      image: "./public/hero-4.jpeg",
+      image: "/hero-4.jpeg",
       title: "Community First",
       subtitle: "Empowering Rural Youth",
       description: "Creating a safe, supportive environment for children from all backgrounds since 2020.",
@@ -51,32 +51,32 @@ const Hero = () => {
             }`}
         >
           <div
-            className="absolute inset-0 bg-cover bg-center transition-transform duration-[5000ms] ease-linear transform scale-105 hover:scale-100"
+            className="absolute inset-0 bg-cover bg-center transition-transform duration-[5000ms] ease-linear transform scale-105"
             style={{ backgroundImage: `url("${slide.image}")` }}
           ></div>
-          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/40 via-slate-900/50 to-slate-900/80"></div>
+          {/* Overlay removed for clear image visibility */}
         </div>
       ))}
 
-      {/* Content Overlay */}
-      <div className="relative z-20 h-full w-full max-w-7xl mx-auto px-4 flex flex-col justify-center items-center text-center">
+      {/* Content Overlay - Positioned at the bottom center */}
+      <div className="relative z-20 h-full w-full max-w-7xl mx-auto px-4 flex flex-col justify-end items-center text-center pb-24 md:pb-32">
         {slides.map((slide, index) => (
           <div
             key={slide.id}
-            className={`absolute top-0 bottom-0 left-0 right-0 flex flex-col justify-center items-center px-4 transition-all duration-700 transform ${index === currentSlide
+            className={`absolute bottom-24 md:bottom-32 left-0 right-0 flex flex-col justify-center items-center px-4 transition-all duration-700 transform ${index === currentSlide
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-8 pointer-events-none"
               }`}
           >
-            <div className="max-w-4xl flex flex-col items-center gap-4 md:gap-6">
-              <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight drop-shadow-lg">
+            <div className="max-w-4xl flex flex-col items-center gap-2 md:gap-4 bg-black/40 p-6 md:p-8 rounded-2xl border border-white/10 shadow-2xl">
+              <h1 className="text-white text-3xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight drop-shadow-2xl">
                 {slide.title}
               </h1>
-              <h2 className="text-sky-200 text-lg md:text-2xl font-bold tracking-wide">
+              <h2 className="text-sky-300 text-lg md:text-xl font-extrabold tracking-widest uppercase">
                 {slide.subtitle}
               </h2>
               {slide.description && (
-                <p className="text-slate-100 text-base md:text-lg font-medium max-w-2xl drop-shadow-md">
+                <p className="text-white text-sm md:text-base font-semibold max-w-2xl drop-shadow-md opacity-90">
                   {slide.description}
                 </p>
               )}

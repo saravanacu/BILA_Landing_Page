@@ -2,9 +2,9 @@ import React from "react";
 
 const Management = () => {
   return (
-    <section className="w-full bg-white dark:bg-background-dark py-16 scroll-mt-20" id="management">
+    <section className="w-full bg-white dark:bg-background-dark py-20 md:py-32 min-h-screen scroll-mt-20" id="management">
       <div className="max-w-7xl mx-auto px-4 flex flex-col gap-10 items-center">
-        <h2 className="text-secondary dark:text-white text-3xl md:text-4xl font-bold text-center">
+        <h2 className="text-secondary dark:text-white tracking-tight text-3xl md:text-5xl font-black text-center">
           Our Leadership
         </h2>
 
@@ -12,7 +12,7 @@ const Management = () => {
           <div className="w-40 h-40 md:w-48 md:h-48 shrink-0 rounded-full bg-white dark:bg-slate-700 overflow-hidden border-8 border-white dark:border-slate-600 shadow-xl">
             <div className="w-full h-full flex items-center justify-center text-slate-300 dark:text-slate-500 bg-slate-200 dark:bg-slate-800">
               {/* <span className="material-symbols-outlined text-7xl">person</span> */}
-              <img src="./public/founder_pp.jpeg" alt="Founder Saravana Kumar" />
+              <img src="/founder_pp.jpeg" alt="Founder Saravana Kumar" />
             </div>
           </div>
           <div className="flex flex-col gap-4 text-center md:text-left flex-1">

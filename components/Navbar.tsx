@@ -26,6 +26,7 @@ const Navbar = () => {
     { name: "What We Do", href: "#programs" },
     { name: "Our Impact", href: "#achievements" },
     { name: "Our Leadership", href: "#management" },
+    { name: "Our Partners", href: "#partners" },
     { name: "Contact Us", href: "#contact" },
   ];
 
@@ -35,7 +36,7 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className="flex items-center gap-3 cursor-pointer select-none" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <img
-            src="./public/logo.jpeg"
+            src="/logo.jpeg"
             alt="Ball Is Life Academy"
             className="h-16 w-auto object-contain"
             onError={(e) => {
