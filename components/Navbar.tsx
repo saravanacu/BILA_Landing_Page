@@ -69,13 +69,6 @@ const Navbar = () => {
               </a>
             ))}
           </div>
-          <a
-             href="#contact"
-             onClick={(e) => handleScroll(e, "#contact")}
-             className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-sky-600 transition-all shadow-[0_4px_14px_0_rgba(14,165,233,0.39)]"
-          >
-            <span className="truncate">Join Now</span>
-          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -103,15 +96,6 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <div className="px-4 pb-2">
-            <a
-              href="#contact"
-              onClick={(e) => handleScroll(e, "#contact")}
-              className="w-full flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-sky-600 transition-all shadow-[0_4px_14px_0_rgba(14,165,233,0.39)]"
-            >
-              <span className="truncate">Join Now</span>
-            </a>
-          </div>
         </div>
       )}
     </nav>

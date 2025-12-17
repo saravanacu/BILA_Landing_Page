@@ -9,11 +9,7 @@ const Hero = () => {
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuD7OH87ZkTwW2fb1V-xhXjIKTr68jmmA9ddoAaDyn5Ifp_HF3gig3N9XvHUAwXhjxpPKPm8UFazZ-b-ydBniRInPGvuf7vcvXUEwhv8oYObb11hlpj-KfAdtM_AlEB3jjx0MNUSXqxI5nSLh49ux9yXCihR06A3wu0H53dnZlA65pFCYd88lkhLVc9uD_mp8FDEUaiLR3sJIxrDvmJV9jfe89eFaZJu3yCNphflgYVDWyhX96U30xdC72qh5v8exPBsfpgz3WPpZqRb",
       title: "Ball Is Life Academy",
       subtitle: "Free Basketball Coaching Center",
-      description: "Founder: Saravana Kumar R • Sholavandan, Madurai",
-      cta: "Join Us",
-      ctaLink: "#contact",
-      secondaryCta: "Learn More",
-      secondaryCtaLink: "#vision"
+      description: "Sholavandan, Madurai, TN, IN.",
     },
     {
       id: 2,
@@ -21,8 +17,6 @@ const Hero = () => {
       title: "More Than Just A Game",
       subtitle: "Building Character Through Sport",
       description: "Teaching discipline, teamwork, and leadership to the next generation of athletes.",
-      cta: "Our Programs",
-      ctaLink: "#programs"
     },
     {
       id: 3,
@@ -30,8 +24,6 @@ const Hero = () => {
       title: "Competitive Excellence",
       subtitle: "District & State Level Tournaments",
       description: "Providing opportunities for young talent to showcase their skills on bigger stages.",
-      cta: "See Our Impact",
-      ctaLink: "#achievements"
     },
     {
       id: 4,
@@ -39,8 +31,6 @@ const Hero = () => {
       title: "Community First",
       subtitle: "Empowering Rural Youth",
       description: "Creating a safe, supportive environment for children from all backgrounds since 2020.",
-      cta: "Support Us",
-      ctaLink: "#contact"
     }
   ];
 
@@ -50,15 +40,6 @@ const Hero = () => {
     }, 5000);
     return () => clearInterval(interval);
   }, [slides.length]);
-
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
-    const targetId = href.replace("#", "");
-    const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <section className="relative w-full h-[600px] md:h-[700px] lg:h-[800px] overflow-hidden bg-slate-900">
@@ -92,7 +73,6 @@ const Hero = () => {
             <div className="max-w-4xl flex flex-col items-center gap-4 md:gap-6">
               <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight drop-shadow-lg">
                 {slide.title}
-                {index === 0 && <span className="text-primary block md:inline"> Academy</span>}
               </h1>
               <h2 className="text-sky-200 text-lg md:text-2xl font-bold tracking-wide">
                 {slide.subtitle}
@@ -102,25 +82,6 @@ const Hero = () => {
                   {slide.description}
                 </p>
               )}
-              
-              <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                <a
-                  href={slide.ctaLink}
-                  onClick={(e) => handleScroll(e, slide.ctaLink)}
-                  className="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 md:h-14 px-8 bg-primary text-white text-base md:text-lg font-bold hover:bg-sky-600 transition-all shadow-lg shadow-primary/30 transform hover:-translate-y-1"
-                >
-                  {slide.cta}
-                </a>
-                {slide.secondaryCta && (
-                  <a
-                    href={slide.secondaryCtaLink}
-                    onClick={(e) => handleScroll(e, slide.secondaryCtaLink || "#")}
-                    className="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 md:h-14 px-8 bg-white/10 backdrop-blur-md border border-white/30 text-white text-base md:text-lg font-bold hover:bg-white/20 transition-all transform hover:-translate-y-1"
-                  >
-                    {slide.secondaryCta}
-                  </a>
-                )}
-              </div>
             </div>
           </div>
         ))}
