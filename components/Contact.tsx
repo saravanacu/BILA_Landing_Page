@@ -9,7 +9,7 @@ const Contact = () => {
             Contact Us
           </h2>
           <p className="text-slate-600 dark:text-slate-400 text-lg">
-            For more details, please contact Mr. Saravana Kumar R, Founder and Coach of Ball Is Life Academy Foundation.
+            For more details please contact through.
           </p>
         </div>
 
@@ -21,6 +21,7 @@ const Contact = () => {
             <div>
               <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-2">Address</h3>
               <p className="text-slate-600 dark:text-slate-400">
+                Door No: 41-1-33, Alangottaram,<br />
                 Sholavandan, Madurai<br />
                 Tamil Nadu, India – 625 214
               </p>
@@ -34,7 +35,7 @@ const Contact = () => {
             <div>
               <h3 className="font-bold text-xl text-slate-900 dark:text-white mb-2">Phone</h3>
               <p className="text-slate-600 dark:text-slate-400">
-                +91 99445 90997
+                +91 98940 74675
               </p>
             </div>
           </div>

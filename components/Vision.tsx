@@ -52,7 +52,7 @@ const Vision = () => {
             Our Vision
           </h1>
           <p className="text-slate-600 dark:text-slate-300 text-lg font-normal leading-relaxed max-w-2xl">
-            Our Ball Is Life Academy aims to introduce the game of basketball to young children and help them achieve holistic development.
+            Our BILA Foundation aims to introduce the game of basketball to young children and help them achieve holistic development.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

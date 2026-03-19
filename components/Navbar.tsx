@@ -36,8 +36,8 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className="flex items-center gap-3 cursor-pointer select-none" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <img
-            src="/logo.jpeg"
-            alt="Ball Is Life Academy"
+            src="/logo.png"
+            alt="BILA Foundation"
             className="h-16 w-auto object-contain"
             onError={(e) => {
               // Fallback if image fails
@@ -51,7 +51,7 @@ const Navbar = () => {
               BILA
             </h2>
             <span className="text-[10px] font-bold tracking-[0.15em] text-primary">
-              BALL IS LIFE ACADEMY
+              BILA FOUNDATION
             </span>
           </div>
         </div>

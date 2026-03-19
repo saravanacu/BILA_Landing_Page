@@ -24,8 +24,8 @@ const Footer = () => {
       <div className="max-w-7xl px-4 mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex items-center gap-3 select-none">
           <img
-            src="/logo.jpeg"
-            alt="Ball Is Life Academy"
+            src="/logo.png"
+            alt="BILA Foundation"
             className="h-12 w-auto object-contain"
             onError={(e) => {
               e.currentTarget.style.display = 'none';
@@ -37,7 +37,7 @@ const Footer = () => {
               BILA
             </h2>
             <span className="text-[8px] font-bold tracking-[0.15em] text-primary">
-              BALL IS LIFE ACADEMY
+              BILA FOUNDATION
             </span>
           </div>
         </div>
@@ -85,7 +85,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-center text-slate-400 text-xs mt-8">
-        © 2025 Ball Is Life Academy. All rights reserved.
+        © 2025 BILA Foundation. All rights reserved.
       </p>
     </footer>
   );
