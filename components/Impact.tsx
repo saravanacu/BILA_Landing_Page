@@ -5,6 +5,9 @@ const Impact = () => {
     { label: "Students Coached", value: "100+" },
     { label: "Established", value: "2020" },
     { label: "Age Group", value: "6-16" },
+    { label: "Summer Camps Organized", value: "5" },
+    { label: "Tournaments Organized", value: "4" },
+    { label: "Tournaments Participated", value: "10+" },
   ];
 
   return (
