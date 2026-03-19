@@ -7,7 +7,7 @@ const Hero = () => {
     {
       id: 1,
       image: "/hero-1.jpeg",
-      title: "BILA Foundation",
+      title: "Ball Is Life Academy Foundation",
       subtitle: "Free Basketball Coaching Center",
       description: "Sholavandan, Madurai, TN, IN.",
     },
